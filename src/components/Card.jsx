@@ -24,7 +24,7 @@ function Card({
 
   const fetchReviews = async () => {
     try {
-      const response = await axios.get(`http://localhost:9000/reviews/${id}`);
+      const response = await axios.get(`https://backend-recipe-management-system.onrender.com/reviews/${id}`);
       setReviews(response.data);
       const avgRating = response.data.reduce((acc, review) => acc + review.rating, 0) / response.data.length;
       setAverageRating(avgRating);
@@ -35,7 +35,7 @@ function Card({
 
   const submitReview = async () => {
     try {
-      await axios.post("http://localhost:9000/reviews", {
+      await axios.post("https://backend-recipe-management-system.onrender.com/reviews", {
         rating,
         reviewText,
         userId: loggedInUser,
@@ -52,7 +52,7 @@ function Card({
   const saveRecipe = async (key) => {
     const userID = useGetUserID();
     try {
-      const response = await axios.put("http://localhost:9000/recipes/save", {
+      const response = await axios.put("https://backend-recipe-management-system.onrender.com/save", {
         userID,
         recipeID: id,
       });
