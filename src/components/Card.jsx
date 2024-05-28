@@ -119,10 +119,10 @@ function Card({
           </button>
         )}
         <div>
-          <h3 className="text-lg font-semibold">Average Rating: {averageRating ? averageRating.toFixed(1) : "No ratings yet"}</h3>
+          <h3 className="text-lg font-semibold">Average Rating:⭐ {averageRating ? averageRating.toFixed(1) : "No ratings yet"}</h3>
           <h3 className="text-lg font-semibold">Submit Your Review</h3>
           <select value={rating} onChange={(e) => setRating(e.target.value)} className="mb-2">
-            <option value="0">Rate...</option>
+            <option value="0">Rateing.⭐</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
