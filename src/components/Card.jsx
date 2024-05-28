@@ -46,6 +46,7 @@ function Card({
       setReviewText("");
     } catch (error) {
       console.error("Error submitting review:", error);
+      alert("Login 1st For Rating")
     }
   };
 
@@ -151,3 +152,6 @@ function Card({
 }
 
 export default Card;
+
+
+
