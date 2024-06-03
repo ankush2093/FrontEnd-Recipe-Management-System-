@@ -73,7 +73,7 @@ function Card({
         <img
           className="rounded-t-lg w-full object-cover object-bottom h-48"
           src={imageUrl}
-          alt=""
+          alt="foodimg"
         />
       </a>
       <div className="py-2 px-5">
